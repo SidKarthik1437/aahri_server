@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'aahri',
         'USER': 'admin',
         'PASSWORD': 'admin',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '',
     }
 }
