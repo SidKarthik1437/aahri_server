@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'placement_training',           # Placement and training app
     'event_management',             # Event management app
     'clubs_communities',            # Clubs and communities app
+    'django_filters',
 ]
 
 
@@ -119,13 +120,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'IST'
 
 USE_I18N = True
 
