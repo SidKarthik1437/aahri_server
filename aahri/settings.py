@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'aahri.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ahri',
+        'NAME': 'aahri',
         'USER': 'admin',
         'PASSWORD': 'admin',
         'HOST': 'db',
