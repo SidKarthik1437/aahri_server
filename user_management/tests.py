@@ -11,6 +11,6 @@ class UserManagementTests(TestCase):
         self.assertTrue(user.is_department_admin, False)
 
     def test_student_creation(self):
-        user = create_user('studentuser', date(2000, 12, 1), 'student', usn='1GA20AD044')
+        user = create_user('studentuser', date(2000, 12, 1), 'student')
         self.assertEqual(user.user.username, 'studentuser')
-        self.assertEqual(user.enrollment_number, 'S001')
+        self.assertEqual(user.usn, '1GA20AD044')
