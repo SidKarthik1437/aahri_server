@@ -6,7 +6,7 @@ from rest_framework.test import APIClient
 
 class CourseTestCase(TestCase):
     def setUp(self):
-        Course.objects.create(code="CS101", title="Introduction to Computer Science", credit_hours=3)
+        Course.objects.create(code="CS101", title="Introduction to Computer Science", credits=3)
 
     def test_course_creation(self):
         course = Course.objects.get(code="CS101")
@@ -16,8 +16,8 @@ class CourseTestCase(TestCase):
 class TestCourseSearch(TestCase):
     def setUp(self):
         self.client = APIClient()
-        Course.objects.create(code="CS101", title="Intro to CS", credit_hours=3)
-        Course.objects.create(code="CS102", title="Advanced CS", credit_hours=4)
+        Course.objects.create(code="CS101", title="Intro to CS", credits=3)
+        Course.objects.create(code="CS102", title="Advanced CS", credits=4)
 
     def test_search_course_title(self):
         response = self.client.get('/courses/', {'search': 'Intro'})
