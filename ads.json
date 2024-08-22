@@ -1,1 +1,18 @@
-{}
+{
+    "test": {
+        "projectName": "test",
+        "description": "testing",
+        "type": "community",
+        "author": "SidKarthik1437",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/SidKarthik1437/aahri_server",
+        "githubUri": "https://github.com/SidKarthik1437/aahri_server",
+        "license": "apache-2.0",
+        "lastUpdated": "1724361054642",
+        "tags": [
+            "community"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
+    }
+}
